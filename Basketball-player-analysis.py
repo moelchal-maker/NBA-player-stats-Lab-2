@@ -1,7 +1,7 @@
 '''
 Docstring for Basketball-player-analysis
 This script analyzes basketball player statistics from a TSV file and computes various performance metrics.
-It outputs individual player metrics to a CSV file and generates top 100 lists for each metric.
+It outputs individual player metrics to a txt file and generates top 100 lists for each metric.
 Author: Mohamad El-Chal
 Date: Feb 2026
 
