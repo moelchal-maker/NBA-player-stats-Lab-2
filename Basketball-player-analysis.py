@@ -1,10 +1,11 @@
+
 '''
 Docstring for Basketball-player-analysis
 This script analyzes basketball player statistics from a TSV file and computes various performance metrics.
-It outputs individual player metrics to a txt file and generates top 100 lists for each metric.
+It outputs individual player metrics to a CSV file and generates top 100 lists for each metric.
 Author: Mohamad El-Chal
 Date: Feb 2026
-
+Version:1.0
 
 
 '''
@@ -39,20 +40,21 @@ def safeDivide(numerator, denominator):
 # Metric Calculations
 
 
-fgAccuracy = safeDivide(data['FGM'], data['FGA'])
-threePtAccuracy = safeDivide(data['3PM'], data['3PA'])
-ftAccuracy = safeDivide(data['FTM'], data['FTA'])
-pointsPerGame = safeDivide(data['PTS'], data['GP'])
+with np.errstate(invalid='ignore'):
+    fgAccuracy = safeDivide(data['FGM'], data['FGA'])
+    threePtAccuracy = safeDivide(data['3PM'], data['3PA'])
+    ftAccuracy = safeDivide(data['FTM'], data['FTA'])
+    pointsPerGame = safeDivide(data['PTS'], data['GP'])
 
 
-overallShootingAccuracy = safeDivide(
-data['FGM'] + data['3PM'] + data['FTM'],
-data['FGA'] + data['3PA'] + data['FTA']
-)
+    overallShootingAccuracy = safeDivide(
+    data['FGM'] + data['3PM'] + data['FTM'],
+    data['FGA'] + data['3PA'] + data['FTA']
+    )
 
 
-blocksPerGame = safeDivide(data['BLK'], data['GP'])
-stealsPerGame = safeDivide(data['STL'], data['GP'])
+    blocksPerGame = safeDivide(data['BLK'], data['GP'])
+    stealsPerGame = safeDivide(data['STL'], data['GP'])
 
 
 metrics = {
