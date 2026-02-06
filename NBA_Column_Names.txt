@@ -1,0 +1,34 @@
+League	League Name
+Season	Season Year (YYYY-YYYY)
+Stage	Regular_Season
+Player	Player Full Name
+Team	Team Name
+GP	Games Played
+MIN	Minutes Played
+FGM	Field Goals Made
+FGA	Field Goals Attempted
+3PM	Three Pointers Made
+3PA	Three Pointers Attempted
+FTM	Free Throws Made
+FTA	Free Throws Attempted
+TOV	Turnovers
+PF	Personal Fouls
+ORB	Offensive Rebounds
+DRB	Defensive Rebounds
+REB	Rebounds
+AST	Assists
+STL	Steals
+BLK	Blocks
+PTS	Points
+birth_year	Birth Year
+birth_month	Birth Month
+birth_date	Birth Date
+height	Height (feet)
+height_cm	Height (cm)
+weight	Weight (pounds)
+weight_kg	Weight (kg)
+nationality	Nationality
+high_school	High School
+draft_round	Round Number
+draft_pick	Pick Number
+draft_team	Team Slected in Draft
